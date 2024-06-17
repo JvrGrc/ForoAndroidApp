@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24b9bf "
+    android:orientation="vertical"
+    tools:context=".PantallaPrincipal">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/nombre"
+        android:textColor="#FAFAFA"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/icono"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libros"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#3fbcc4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMain"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonAgregar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:contentDescription="@string/agregar"
+        android:src="@drawable/agregar"
+        app:backgroundTint="#148287"
+        app:fabCustomSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textNada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/no_existen_posts"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spinnerMain"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/nombreUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:gravity="center"
+        android:text="@string/textview"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

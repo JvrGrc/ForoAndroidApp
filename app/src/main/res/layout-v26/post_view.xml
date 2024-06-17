@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_redondeado_alreves">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baloo_paaji_2"
+        android:text="@string/correo_del_usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/baloo_paaji"
+        android:gravity="center_vertical"
+        android:text="@string/tiulo_del_post"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textViewCategoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/categoriaEjemplo"
+        android:textColor="#3A3A3A"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewNombre"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/informacion"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

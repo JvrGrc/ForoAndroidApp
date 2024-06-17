@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ForoDePancho</string>
+    <string name="nombre">El foro de Pancho</string>
+    <string name="icono">Icono del foro</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="inciarSesion">Iniciar Sesión</string>
+    <string name="cuenta">¿No tienes cuenta?</string>
+    <string name="aqui">Registrate aquí</string>
+    <string name="crear">Crea tu cuenta</string>
+    <string name="terminos">Acepto las condiciones y términos de uso.</string>
+    <string name="registrar">Registrar usuario</string>
+    <string name="nueva">Nueva publicación</string>
+    <string name="titulo">Título</string>
+    <string name="publicacion">Texto de la publicación.\n (Máx: 300 caracteres)</string>
+    <string name="publicar">Publicar</string>
+    <string name="agregar">agregar</string>
+    <string name="correo_del_usuario">Correo del usuario</string>
+    <string name="tiulo_del_post">Titulo del post</string>
+    <string name="categoriaEjemplo">Programación</string>
+    <string name="informacion">Información que el usuario introduzca como publicación</string>
+    <string name="imagen_del_usuario">Imagen del usuario</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="textview">TextView</string>
+    <string name="no_comentarios">No hay comentarios.\nSe el primero en comentar.</string>
+    <string name="comentario">Comentario</string>
+    <string name="no_existen_posts">No existen posts</string>
+</resources>

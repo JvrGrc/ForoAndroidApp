@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerTheme">
+        <item name="android:textColor">#BABABA</item>
+        <item name="android:fontFamily">@font/baloo_paaji_2_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#24b9bf "
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/psswrd"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/fondo_redondeado"
+        android:ems="10"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:hint="@string/contraseña"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#BABABA"
+        android:textColorHint="#EAECED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/iniciarSesionButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/fondo_redondeado_alreves"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/inciarSesion"
+        android:textColor="#EAECED"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/psswrd"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/cuenta"
+        android:textColor="#EAECED"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesionButton"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/registroButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-85dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/aqui"
+        android:textColor="#EAECED"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesionButton"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/fondo_redondeado"
+        android:ems="10"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:hint="@string/correo"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="#BABABA"
+        android:textColorHint="#EAECED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/baloo_paaji_2_medium"
+        android:text="@string/nombre"
+        android:textColor="#FAFAFA"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="160dp"
+        android:contentDescription="@string/icono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/libros"
+        tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
