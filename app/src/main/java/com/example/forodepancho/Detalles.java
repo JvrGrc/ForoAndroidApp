@@ -99,9 +99,6 @@ public class Detalles extends AppCompatActivity {
         recyclerComentarios.addOnItemTouchListener(new RecyclerItemClickListener(this, recyclerComentarios, new RecyclerItemClickListener.OnItemClickListener() {
             @Override
             public void onItemClick(View v, int posicion) {
-                Intent intent = new Intent(v.getContext(), Detalles.class);
-                intent.putExtra("post", adapter.getDatos().get(posicion));
-                startActivity(intent);
             }
 
             @Override
